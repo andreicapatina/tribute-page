@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #0A74DA;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 15px;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+
+    letter-spacing: 3px; 
+}
+
+section {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text content */
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#general {
+    padding-top: 50px;
+}
+
+#title {
+    font-family: 'Rubik', sans-serif;
+    color: #2C2C2C;
+}
+
+
+.content-container {
+    background-color: #F0F0F0;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    max-width: 800px; /* Optional: Limit maximum width */
+    width: 100%; /* Ensures the container stretches to the width of its parent */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
