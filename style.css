@@ -1,0 +1,128 @@
+/* Reset CSS pentru a elimina marginile și padding-ul implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p {
+    line-height: 1.6; /* Setează spațiul între liniile de text */
+}
+
+/* Stiluri pentru bara de navigare */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* asigură-te că bara de navigare va fi deasupra altor elemente */
+}
+  
+li {
+    /* float: left;  Eliminăm această linie */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Stiluri pentru centrat secțiuni */
+section {
+    max-width: 800px;
+    margin: 80px auto; /* 80px margine sus și jos, auto pentru stânga și dreapta */
+    margin-bottom: 20px; /* Adaugă un spațiu de 20px între secțiuni */
+    padding: 20px;
+    text-align: left; /* Aliniere normală a textului */
+}
+
+section h3 {
+    margin-bottom: 10px; /* Adaugă un spațiu de 10px între titluri și paragrafe */
+}
+
+
+/* Stiluri pentru articole */
+section article {
+    margin-bottom: 20px; /* Adaugă spațiu între articole */
+}
+
+/* Stiluri pentru secțiunea general */
+#general {
+    margin: 80px auto; /* Centrat pe pagină */
+    padding: 20px;
+    text-align: left;
+}
+
+#general h1 {
+    text-align: center;
+}
+
+
+#general img {
+    display: block;
+    margin: 20px auto; /* Adaugă spațiu deasupra și dedesubtul imaginii, imaginea este centrată */
+    max-width: 100%;
+    height: auto;
+}
+
+#general p {
+    margin-bottom: 20px; /* Adaugă spațiu sub fiecare paragraf */
+}
+
+#facts {
+    margin-bottom: 100px; /* Adaugă un spațiu de 20px între ultima secțiune și footer */
+}
+
+/* Stiluri suplimentare pentru footer */
+footer {
+    padding: 10px;
+    background-color: #333; /* Schimbă culoarea fundalului după preferințe */
+    text-align: center; /* Aliniază conținutul la centru */
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 999; /* Asigură-te că butonul este în fața altor elemente */
+}
+
+footer button:hover {
+    background-color: #555;
+}
+/* Adăugăm un padding de sus pentru a nu suprapune conținutul cu bara de navigare */
+
+main {
+    padding-top: 60px;
+}
